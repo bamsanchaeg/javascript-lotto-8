@@ -90,16 +90,15 @@
 
 ```plaintext
 src/
-├── App.js                # 프로그램 실행 진입점
+├── App.js
 ├── domain/
-│   ├── Lotto.js          # 로또 객체 (번호 생성 및 검증)
-│   ├── LottoResult.js    # 당첨 결과 계산 로직
-│   └── PrizeTable.js     # 당첨 조건/상금 정의
+│   └── Lotto.js
+├── service/
+│   └── LottoService.js
 ├── view/
-│   ├── InputView.js      # 사용자 입력 처리
-│   └── OutputView.js     # 결과 출력
+│   ├── InputView.js
+│   └── OutputView.js
 └── utils/
-  ├── Validator.js      # 입력 유효성 검증
-  ├── RandomUtil.js     # 중복 없는 랜덤 번호 생성기
-  └── Calculator.js     # 수익률 계산
+    ├── Validator.js
+    └── Calculator.js
 ```
