@@ -1,6 +1,7 @@
 import { Console } from "@woowacourse/mission-utils";
 import LottoService from "./service/LottoService.js";
 import Validator from "./utils/Validator.js";
+import Calculator from "./utils/Calculator.js";
 
 class App {
   async run() {
@@ -23,7 +24,7 @@ class App {
       this.#printResult(result, yieldRate);
     } catch (error) {
       Console.print(error.message);
-      await this.run(); // 재시작
+      return;
     }
   }
 

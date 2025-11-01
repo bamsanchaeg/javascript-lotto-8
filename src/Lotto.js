@@ -25,8 +25,8 @@ class Lotto {
       throw new Error("[ERROR] 중복된 번호가 있습니다.");
     }
 
-    numbers.array.forEach((numbers) => {
-      if (numbers < 1 || numbers > 45) {
+    numbers.forEach((number) => {
+      if (number < 1 || number > 45) {
         throw new Error("[ERROR] 번호는 1~45 사이여야 합니다.");
       }
     });
